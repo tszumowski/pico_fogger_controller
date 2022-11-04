@@ -19,7 +19,7 @@ USER CONFIGURATION
 # How long to keep output enabled for, in seconds
 ACTIVE_TIME = 5
 # How long to deep sleep for, in seconds
-SLEEP_TIME = 5
+SLEEP_TIME = 60
 
 """
 STATIC CONFIGURATION
