@@ -40,9 +40,10 @@ INITIALIZATION
 led = Pin(25, Pin.OUT)
 relay_pin = Pin(RELAY_PIN, Pin.OUT)
 
-# Initialize interrupt pin
-interrupt_pin = Pin(INTERRUPT_PIN, Pin.IN, Pin.PULL_UP)
-interrupt_pin.irq(trigger=Pin.IRQ_FALLING, handler=callback)
+# Initialize interrupt pin as PULL_DOWN because for this example, the HC-SR501
+# PIR goes HIGH for a period of time when it senses motion. So we catch rising edge.
+interrupt_pin = Pin(INTERRUPT_PIN, Pin.IN, Pin.PULL_DOWN)
+interrupt_pin.irq(trigger=Pin.IRQ_RISING, handler=callback)
 
 """
 MAIN LOOP
