@@ -27,3 +27,8 @@ The relay module was a useful way to activate that mechanical switch with circui
 The `main.py` can be uploaded to the Pico via a tool like [Thonny](https://thonny.org/) after you flash it with [MicroPython](https://micropython.org/download/rp2-pico/) firmware.
 
 The `main.py` is a timer that switches the onboard LED and relay pin ON/OFF. When the pins are OFF, it can be optionally interrupted via the interrupt pin (i.e. with a PIR motion detection event), which will turn the LED/relay back on. 
+
+## References
+
+- [Raspberry Pi Pico and HC-SR501 Motion Sensor](https://www.teachmemicro.com/raspberry-pi-pico-hc-sr501-motion-sensor/)
+  - Provides pin connection diagrams and descriptions of the behavior of the HC-SR501 PIR sensor module 
