@@ -30,5 +30,9 @@ The `main.py` is a timer that switches the onboard LED and relay pin ON/OFF. Whe
 
 ## References
 
+- ["I SCARED my Daughters using a Raspberry Pi" YouTube Video by NetworkChuck](https://www.youtube.com/watch?v=X2YH-XyqyXE)
+  - I watched this after I created the controller, but wish I had it as a resource while I was building. 
+  - Great intro to how to use a Pi to control various Halloween devices via sensors, iphone, and other means
+  - Centered around Raspberry Pi and not the Pico, but it's quite close in implementation for these purposes.
 - [Raspberry Pi Pico and HC-SR501 Motion Sensor](https://www.teachmemicro.com/raspberry-pi-pico-hc-sr501-motion-sensor/)
   - Provides pin connection diagrams and descriptions of the behavior of the HC-SR501 PIR sensor module 
